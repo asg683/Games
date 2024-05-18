@@ -1,0 +1,164 @@
+<!Doctype>
+
+<html>
+  <head>
+    <title>Adelina simpson Index page</title>
+
+    <meta name="Indexpage" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Chelsea+Market&family=East+Sea+Dokdo&family=Lora&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet"> 
+
+    <style>
+        @font-face {
+          font-family: 'Open Sans';
+          src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+          font-weight: normal;
+          font-style: normal;
+        }
+        body{
+          background-color:#5E3419;
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        h1,h2,h3{
+          font-family: 'Open Sans', serif;
+        }
+        h4,h5,h6{
+          font-family: 'Lora', serif;
+        }
+        section img{
+          width: 100%;
+          max-width: 2000px; 
+          height: auto;
+        }
+        section{
+          width:90%;
+          margin:auto;
+        }
+
+        body { 
+          background-color: #171717;
+        }
+        
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh; 
+          }
+        
+        img {
+          object-fit: contain; 
+          }
+
+        #Header4 {
+          background-color: #222;
+          width: 100%;
+          height: 150px;
+          position: fixed;
+          top:0px;
+          left:0px;
+          z-index:1;
+        }
+
+        
+        .popup {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.5);
+        }
+        .popup-inner {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #633A20;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+          text-align: center;
+        }
+        
+        .popup-close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 20px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+    </style>
+
+
+    <script>
+          function openPopup() {
+            document.getElementById("popup").style.display = "block";
+          }
+
+          function closePopup() {
+            document.getElementById("popup").style.display = "none";
+          }
+          
+          window.onclick = function(event) {
+            var popup = document.getElementById("popup");
+            if (event.target == popup) {
+              popup.style.display = "none";
+            }
+          }
+              
+          var audio = document.getElementById("myAudio");
+          var catAUDIO = document.getElementById("catAUDIO");
+          var playButton = document.getElementById("playButton");
+
+          function playPause() {
+            if (audio.paused) {
+              audio.play();
+              playButton.textContent = "PAUSE";
+            } else {
+              audio.pause();
+              playButton.textContent = "MUSIC";
+            }
+          }
+
+          function playAudio() {
+            catAUDIO.play();
+          }
+
+    </script>
+  </head>
+  <body>
+
+    <audio id="myAudio" loop>
+      <source src="generalmusic.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="catAUDIO">
+      <source src="catmeow.mp3" type="audio/mpeg">
+    </audio>
+  
+    <section>
+      <div style="position: relative;">
+          
+          <br> 
+          <br> 
+          <br>
+          <img src="mainmenuone.png" alt="mainmenu" usemap="#image-map">
+
+          <a href="https://i6.cims.nyu.edu/~asg683/GAMES/DollHouse/Alicebedroom" style="position: absolute; top: 64%; left: 42%; width: 15%; height: 5%; border-radius: 20%; opacity: 0;"></a>
+
+          <a href="https://i6.cims.nyu.edu/~asg683/GAMES/DollHouse/" style="position: absolute; top: 72%; left: 38%; width: 22%; height: 4%; border-radius: 20%; opacity: 0;"></a>
+        
+      </div>    
+    </section>
+    </div>
+  </body>
+</html>
+
+
